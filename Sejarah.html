@@ -8,6 +8,10 @@
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous" />
 
+    <!-- AOS -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+
     <!--My CSS-->
     <link rel="stylesheet" href="style.css" />
 
@@ -16,9 +20,9 @@
   <body>
     <!-- Navbar -->
 
-    <nav class="navbar navbar-expand-lg navbar-dark shadow fixed-top" style="background-color: #135589">
+    <nav class="navbar navbar-expand-lg navbar-dark shadow fixed-top" style="background-color: #135589" data-aos="fade=down">
       <div class="container">
-        <a class="navbar-brand" href="#">BATIK NUSANTARA</a>
+        <a class="navbar-brand" href="#">SEJARAH BATIK</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -32,7 +36,7 @@
               <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                 <li><a class="dropdown-item" href="jenis.html">Jenis Batik</a></li>
                 <li><a class="dropdown-item" href="cara.html">Cara Membuat</a></li>
-                <li><a class="dropdown-item" href="Sejarah.html">SEJARAH</a></li>
+                <li><a class="dropdown-item" href="Sejarah.html">Sejarah</a></li>
                 <li><a class="dropdown-item" href="https://www.google.com/maps/search/penjualan+batik+di+indonesia/@-7.4793254,109.4908198,8.67z/data=!4m4!2m3!5m1!2e3!6e6">Lokasi</a></li>
                 <li><a class="dropdown-item" href="toko.html">Toko Online</a></li>
               </ul>
@@ -47,7 +51,7 @@
     <!--Jumbotron-->
 
     <section class="jumbotron text-center">
-      <img src="image/batik10.jpg" alt="sejarah" width="350" height="100" class="rounded-circle img-thumbnail" />
+      <img src="image/batik10.jpg" alt="sejarah" width="350" height="100" data-aos="flip-down" data-aos-duration="2000" class="rounded-circle img-thumbnail" />
       <p class="lead"></p>
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
         <path
@@ -65,16 +69,16 @@
     <section id="about">
       <div class="countrainer"> 
         <div class="row text-center mb-3">
-          <div class="col">
+          <div class="col" data-aos="fade-down">
             <h2>SEJARAH</h2>
           </div>
         </div>
         </div>
         <div class="row justify-content-evenly fs-5 text-center">
-            <div class="col-md-4" data-aos="fade-right" data-aos-duration="1000">
+            <div class="col-md-4" data-aos="fade-right" data-aos-duration="2000">
                 <p>Sejarah mencatat bahwa batik berkembang erat kaitannya dengan penyebaran agama islam pada masa kerajaan Majapahit. Batik dikenal luas di Indonesia khususnya pulau Jawa setelah akhir abad ke-18 atau awal abad ke-19.</p>
             </div>
-            <div class="col-md-4" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="200"> 
+            <div class="col-md-4" data-aos="fade-left" data-aos-duration="2000" data-aos-delay="200"> 
                 <p>Teknik batik sendiri telah diketahui lebih dari 1.000 tahun, kemungkinan berasal dari Mesir Kuno atau Sumeria.  </p>
             </div>
         </div>
@@ -93,5 +97,10 @@
   <!--Akhir Footer-->
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+  
   </body>
 </html>
